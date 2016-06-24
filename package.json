@@ -1,0 +1,32 @@
+{
+  "name": "potential-enigma",
+  "version": "1.0.0",
+  "description": "A test project based on angularjs, webpack and es2015.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --devtool eval --config webpack.config.js --progress --colors --content-base app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sh-waqar/potential-enigma.git"
+  },
+  "keywords": [
+    "angularjs",
+    "webpack",
+    "es2015"
+  ],
+  "author": "sh-waqar <waqar.ali911@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sh-waqar/potential-enigma/issues"
+  },
+  "homepage": "https://github.com/sh-waqar/potential-enigma#readme",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
