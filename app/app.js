@@ -1,3 +1,5 @@
-let foo = 'bar';
+import angular from 'angular';
 
-alert(foo);
+const ng = angular.module('app', []);
+
+console.log(ng);
