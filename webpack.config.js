@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  context: __dirname + '/app',
+  context: path.resolve(__dirname, 'app'),
   entry: {
     bundle: './app.js',
     vendors: ['angular']
@@ -16,10 +16,12 @@ module.exports = {
       test: /\.js$/,
       loader: 'babel',
       exclude: /node_modules/
-    },
-    {
+    }, {
       test: /\.html$/,
       loader: 'raw'
+    }, {
+      test: /\.scss$/,
+      loader: 'style!css?sourceMap!sass?sourceMap'
     }]
   },
   plugins: [

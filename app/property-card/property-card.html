@@ -1,12 +1,11 @@
-<div class="property">
-	<div class="property_header" ng-style="{'background-color': vm.data.agency.brandingColors.primary}">
-		<img ng-src="{{vm.data.agency.logo}}">
+<div class="property-card">
+	<div class="property-card_header" ng-style="{'background-color': vm.data.agency.brandingColors.primary}">
+		<img ng-src="{{::vm.data.agency.logo}}">
 	</div>
 
-	<div class="property_content">
-		<img ng-src="{{vm.data.mainImage}}">
+	<div class="property-card_content">
+		<img ng-src="{{::vm.data.mainImage}}">
 
-		<div>{{vm.data.price}}</div>
+		<div>{{::vm.data.price}}</div>
 	</div>
-
 </div>

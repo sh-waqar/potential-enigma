@@ -1,15 +1,23 @@
 <div class="property-list">
     <div class="property-list_block">
-    	<property-card 
-    		ng-repeat="result in vm.properties.results" 
-    		data="result">
-    	</property-card>
+        <h2>Results</h2>
+
+        <div class="property-list_block_cards">
+            <property-card 
+            ng-repeat="result in vm.properties.results" 
+            data="result">
+            </property-card>
+        </div>
     </div>
 
     <div class="property-list_block">
-    	<property-card 
-    		ng-repeat="result in vm.properties.saved" 
-    		data="result">
-    	</property-card>
+        <h2>Saved Properties</h2>
+
+        <div class="property-list_block_cards">
+        	<property-card 
+        		ng-repeat="result in vm.properties.saved" 
+        		data="result">
+        	</property-card>
+        </div>
     </div>
 </div>
