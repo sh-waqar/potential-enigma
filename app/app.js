@@ -1,5 +1,6 @@
 import angular from 'angular';
+import propertyCard from './property-card/property-card.js'
 
-const ng = angular.module('app', []);
-
-console.log(ng);
+angular
+	.module('app', [])
+	.component('propertyCard', propertyCard);
