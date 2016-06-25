@@ -1,7 +1,7 @@
-class PropertyCard {
+class PropertyCardController {
   constructor() {
     this.brand = 'some brand';
   }
 }
 
-export default PropertyCard;
+export default PropertyCardController;

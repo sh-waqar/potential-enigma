@@ -1,0 +1,15 @@
+<div class="property-list">
+    <div class="property-list_block">
+    	<property-card 
+    		ng-repeat="result in vm.properties.results" 
+    		data="result">
+    	</property-card>
+    </div>
+
+    <div class="property-list_block">
+    	<property-card 
+    		ng-repeat="result in vm.properties.saved" 
+    		data="result">
+    	</property-card>
+    </div>
+</div>

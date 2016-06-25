@@ -2,7 +2,9 @@ import controller from './property-card.controller';
 import template from './property-card.html'
 
 let propertyCard = {
-  bindings: {},
+  bindings: {
+  	data: '<'
+  },
   template,
   controller,
   controllerAs: 'vm'
