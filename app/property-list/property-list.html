@@ -7,11 +7,11 @@
                 ng-repeat="result in vm.propertiesResults" 
                 data="result"
                 state="result"
-                action="vm.addProperty(result, $index)">
+                action="vm.addProperty(result)">
             </property-card>
 
             <!-- Show help text in case of no items left -->
-            <div ng-show="!vm.propertiesResults.length">No properties in the results.</div>
+            <div ng-show="!vm.propertiesResults.length" class="property-list_block_cards_no-item">No properties in the results.</div>
         </div>
     </div>
 
@@ -23,11 +23,11 @@
         		ng-repeat="saved in vm.propertiesSaved" 
         		data="saved"
                 state="saved"
-                action="vm.removeProperty(saved, $index)">
+                action="vm.removeProperty($index)">
         	</property-card>
 
             <!-- Show help text in case of no items left -->
-            <div ng-show="!vm.propertiesSaved.length">No saved properties.</div>
+            <div ng-show="!vm.propertiesSaved.length" class="property-list_block_cards_no-item">No saved properties.</div>
         </div>
     </div>
 </div>

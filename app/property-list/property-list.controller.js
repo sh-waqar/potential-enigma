@@ -49,18 +49,19 @@ class PropertyListController {
     this.propertiesSaved = data.saved;
   }
 
-  addProperty(item, idx) {
-    // Remove the selected item from the results list
-    this.propertiesResults.splice(idx, 1);
+  addProperty(item) {
+    // Check the exsistance of the selected item 
+    // in the saved items array
+    if (this.propertiesSaved.indexOf(item) > -1) {
+      return false;
+    }
     // Add the selected item in saved list
     this.propertiesSaved.push(item);
   }
 
-  removeProperty(item, idx) {
+  removeProperty(idx) {
     // Remove the selected item from saved list
     this.propertiesSaved.splice(idx, 1);
-    // Add the selected item in results list
-    this.propertiesResults.push(item);
   }
 }
 

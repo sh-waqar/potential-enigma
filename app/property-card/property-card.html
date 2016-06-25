@@ -4,10 +4,15 @@
 	</div>
 
 	<div class="property-card_content">
-		<img ng-src="{{::vm.data.mainImage}}">
+		<div class="property-card_content_image" style="background-image: url({{::vm.data.mainImage}})">
 
-		<div>{{::vm.data.price}}</div>
+		<div class="property-card_content_price">
+			<small>Price</small>
+			<h3>{{::vm.data.price}}</h3>
+		</div>
 
-		<button ng-click="vm.action()">{{vm.actionLabel}}</button>
+		<div class="action-button">
+			<button class="btn btn--{{::vm.state}}" ng-click="vm.action()" type="button">{{::vm.actionLabel}}</button>
+		</div>
 	</div>
 </div>

@@ -15,6 +15,11 @@
   		padding: 0 14px;
   		border: 1px dashed #ccc;
   		border-radius: 4px;
+
+      &_no-item {
+        text-align: center;
+        padding: 10px;
+      }
   	}
   }
 }
