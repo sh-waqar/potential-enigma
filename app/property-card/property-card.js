@@ -1,8 +1,7 @@
 import controller from './property-card.controller';
 import template from './property-card.html'
-
 // Loading styles
-require('./property-card.scss');
+import './property-card.scss';
 
 let propertyCard = {
   bindings: {

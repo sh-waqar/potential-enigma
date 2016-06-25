@@ -2,7 +2,7 @@ import controller from './property-list.controller';
 import template from './property-list.html'
 
 // Loading styles
-require('./property-list.scss');
+import './property-list.scss';
 
 let propertyList = {
   bindings: {},
