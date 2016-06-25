@@ -4,9 +4,14 @@
 
         <div class="property-list_block_cards">
             <property-card 
-            ng-repeat="result in vm.properties.results" 
-            data="result">
+                ng-repeat="result in vm.propertiesResults" 
+                data="result"
+                state="result"
+                action="vm.addProperty(result, $index)">
             </property-card>
+
+            <!-- Show help text in case of no items left -->
+            <div ng-show="!vm.propertiesResults.length">No properties in the results.</div>
         </div>
     </div>
 
@@ -15,9 +20,14 @@
 
         <div class="property-list_block_cards">
         	<property-card 
-        		ng-repeat="result in vm.properties.saved" 
-        		data="result">
+        		ng-repeat="saved in vm.propertiesSaved" 
+        		data="saved"
+                state="saved"
+                action="vm.removeProperty(saved, $index)">
         	</property-card>
+
+            <!-- Show help text in case of no items left -->
+            <div ng-show="!vm.propertiesSaved.length">No saved properties.</div>
         </div>
     </div>
 </div>

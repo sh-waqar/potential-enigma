@@ -41,11 +41,26 @@ let data = {
     "id": "4",
     "mainImage": "http://i2.au.reastatic.net/640x480/5e84d96722dda3ea2a084d6935677f64872d1d760562d530c3cabfcb7bcda9c2/main.jpg"
   }]
-}
+};
 
 class PropertyListController {
   constructor() {
-    this.properties = data;
+    this.propertiesResults = data.results;
+    this.propertiesSaved = data.saved;
+  }
+
+  addProperty(item, idx) {
+    // Remove the selected item from the results list
+    this.propertiesResults.splice(idx, 1);
+    // Add the selected item in saved list
+    this.propertiesSaved.push(item);
+  }
+
+  removeProperty(item, idx) {
+    // Remove the selected item from saved list
+    this.propertiesSaved.splice(idx, 1);
+    // Add the selected item in results list
+    this.propertiesResults.push(item);
   }
 }
 

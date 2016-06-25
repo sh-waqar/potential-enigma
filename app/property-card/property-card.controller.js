@@ -1,6 +1,7 @@
 class PropertyCardController {
   constructor() {
-    this.brand = 'some brand';
+  	// Check the state from binding and decide the label for button
+    this.actionLabel = this.state == 'result' ? 'Add Property' : 'Remove Property';
   }
 }
 

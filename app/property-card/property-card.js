@@ -6,7 +6,9 @@ require('./property-card.scss');
 
 let propertyCard = {
   bindings: {
-  	data: '<'
+  	data: '<',
+  	action: '&',
+  	state: '@'
   },
   template,
   controller,
