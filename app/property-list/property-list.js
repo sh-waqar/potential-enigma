@@ -1,5 +1,5 @@
 import controller from './property-list.controller';
-import template from './property-list.html'
+import template from './property-list.html';
 
 // Loading styles
 import './property-list.scss';

@@ -1,4 +1,4 @@
-import Module from '../app'
+import Module from '../app';
 import Controller from './property-list.controller';
 import Component from './property-list';
 import Template from './property-list.html';
