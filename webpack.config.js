@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
   context: path.resolve(__dirname, 'app'),
@@ -21,10 +22,13 @@ module.exports = {
       loader: 'raw'
     }, {
       test: /\.scss$/,
-      loader: 'style!css?sourceMap!sass?sourceMap'
+      loader: 'style!css?sourceMap!postcss-loader!sass?sourceMap'
     }]
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
-  ]
+  ],
+  postcss: function() {
+    return [autoprefixer];
+  }
 };
