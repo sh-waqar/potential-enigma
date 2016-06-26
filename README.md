@@ -8,7 +8,13 @@ A test project based on angularjs, webpack and es2015.
 git clone https://github.com/sh-waqar/potential-enigma.git
 ```
 
-- Install the project dependencies.
+- Install the global dependencies.
+
+```
+npm install -g webpack webpack-dev-server karma
+```
+
+- Install the project local dependencies.
 
 ```
 npm install
